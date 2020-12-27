@@ -10,6 +10,6 @@ for page in range(pages):
     text += pdf_reader.getPage(page).extractText()
 
 print(len(text.split(' ')))
-
+print(text.replace('\n', ' '))
 if __name__ == "__main__":
     pass
